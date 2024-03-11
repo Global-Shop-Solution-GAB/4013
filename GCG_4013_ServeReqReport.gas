@@ -1,0 +1,1916 @@
+Program.Sub.ScreenSU.Start
+Gui.Form1..Create
+Gui.Form1..Caption("Service Requests")
+Gui.Form1..Size(6870,8280)
+Gui.Form1..Position(0,0)
+Gui.Form1..AlwaysOnTop(False)
+Gui.Form1..FontName("Arial")
+Gui.Form1..FontSize(8)
+Gui.Form1..ForeColor(0)
+Gui.Form1..Backcolor(-2147483633)
+Gui.Form1..ControlBox(True)
+Gui.Form1..MaxButton(True)
+Gui.Form1..MinButton(True)
+Gui.Form1..MousePointer(0)
+Gui.Form1..Moveable(True)
+Gui.Form1..Sizeable(False)
+Gui.Form1..ShowInTaskBar(True)
+Gui.Form1..TitleBar(True)
+Gui.Form1..Event(UnLoad,form1_unload)
+Gui.Form1..minx(0)
+Gui.Form1..miny(0)
+Gui.Form1.txtReqType.Create(textbox,"",True,1995,300,0,105,255,True,0,"Arial",8,-2147483643,1)
+Gui.Form1.txtReqType.Text("")
+Gui.Form1.txtReqType.TabStop(True)
+Gui.Form1.txtReqType.TabIndex(0)
+Gui.Form1.txtReqType.Tooltip("")
+Gui.Form1.txtReqType.ControlGroup(0)
+Gui.Form1.txtReqType.DefaultValue("")
+Gui.Form1.lbl1.Create(label,"Request Type",True,1365,255,1,105,60,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl1.Tooltip("")
+Gui.Form1.lbl1.ControlGroup(0)
+Gui.Form1.lbl1.DefaultValue("")
+Gui.Form1.cmdReqType.Create(button)
+Gui.Form1.cmdReqType.Caption("^")
+Gui.Form1.cmdReqType.Visible(True)
+Gui.Form1.cmdReqType.Size(420,375)
+Gui.Form1.cmdReqType.Zorder(0)
+Gui.Form1.cmdReqType.Position(2175,255)
+Gui.Form1.cmdReqType.Enabled(True)
+Gui.Form1.cmdReqType.FontName("Arial")
+Gui.Form1.cmdReqType.FontSize(8)
+Gui.Form1.cmdReqType.TabStop(True)
+Gui.Form1.cmdReqType.TabIndex(1)
+Gui.Form1.cmdReqType.Tooltip("")
+Gui.Form1.cmdReqType.ControlGroup(0)
+Gui.Form1.cmdReqType.DefaultValue("")
+Gui.Form1.cmdReqType.Event(Click,cmdreqtype_click)
+Gui.Form1.txtBegCust.Create(textbox,"",True,1995,300,0,105,3150,True,0,"Arial",8,-2147483643,1)
+Gui.Form1.txtBegCust.Text("")
+Gui.Form1.txtBegCust.TabStop(True)
+Gui.Form1.txtBegCust.TabIndex(11)
+Gui.Form1.txtBegCust.Tooltip("")
+Gui.Form1.txtBegCust.ControlGroup(0)
+Gui.Form1.txtBegCust.DefaultValue("")
+Gui.Form1.txtENdCust.Create(textbox,"",True,1995,300,0,2775,3150,True,0,"Arial",8,-2147483643,1)
+Gui.Form1.txtENdCust.Text("")
+Gui.Form1.txtENdCust.TabStop(True)
+Gui.Form1.txtENdCust.TabIndex(13)
+Gui.Form1.txtENdCust.Tooltip("")
+Gui.Form1.txtENdCust.ControlGroup(0)
+Gui.Form1.txtENdCust.DefaultValue("")
+Gui.Form1.datepicker1.Create(datepicker)
+Gui.Form1.datepicker1.Visible(True)
+Gui.Form1.datepicker1.Size(1935,285)
+Gui.Form1.datepicker1.Zorder(0)
+Gui.Form1.datepicker1.Position(105,1110)
+Gui.Form1.datepicker1.Enabled(True)
+Gui.Form1.datepicker1.Checkbox(False)
+Gui.Form1.datepicker1.TabStop(True)
+Gui.Form1.datepicker1.TabIndex(3)
+Gui.Form1.datepicker1.Tooltip("")
+Gui.Form1.datepicker1.ControlGroup(0)
+Gui.Form1.datepicker1.DefaultValue("")
+Gui.Form1.datepicker2.Create(datepicker)
+Gui.Form1.datepicker2.Visible(True)
+Gui.Form1.datepicker2.Size(1935,285)
+Gui.Form1.datepicker2.Zorder(0)
+Gui.Form1.datepicker2.Position(2250,1110)
+Gui.Form1.datepicker2.Enabled(True)
+Gui.Form1.datepicker2.Checkbox(False)
+Gui.Form1.datepicker2.TabStop(True)
+Gui.Form1.datepicker2.TabIndex(4)
+Gui.Form1.datepicker2.Tooltip("")
+Gui.Form1.datepicker2.ControlGroup(0)
+Gui.Form1.datepicker2.DefaultValue("")
+Gui.Form1.lbl2.Create(label,"Beginning Date",True,1665,255,1,105,900,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl2.Tooltip("")
+Gui.Form1.lbl2.ControlGroup(0)
+Gui.Form1.lbl2.DefaultValue("")
+Gui.Form1.lbl3.Create(label,"Ending Date",True,1665,255,1,2250,900,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl3.Tooltip("")
+Gui.Form1.lbl3.ControlGroup(0)
+Gui.Form1.lbl3.DefaultValue("")
+Gui.Form1.chkAllReqs.Create(checkbox)
+Gui.Form1.chkAllReqs.Alignment(0)
+Gui.Form1.chkAllReqs.Caption("All Request Types")
+Gui.Form1.chkAllReqs.Visible(True)
+Gui.Form1.chkAllReqs.Size(1650,255)
+Gui.Form1.chkAllReqs.Zorder(0)
+Gui.Form1.chkAllReqs.Position(105,585)
+Gui.Form1.chkAllReqs.Enabled(True)
+Gui.Form1.chkAllReqs.FontName("Arial")
+Gui.Form1.chkAllReqs.FontSize(8)
+Gui.Form1.chkAllReqs.TabStop(True)
+Gui.Form1.chkAllReqs.TabIndex(2)
+Gui.Form1.chkAllReqs.Tooltip("")
+Gui.Form1.chkAllReqs.ControlGroup(0)
+Gui.Form1.chkAllReqs.DefaultValue("")
+Gui.Form1.chkAllReqs.Event(Click,chkallreqs_click)
+Gui.Form1.lbl4.Create(label,"Beginning Customer",True,1935,255,1,105,2925,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl4.Tooltip("")
+Gui.Form1.lbl4.ControlGroup(0)
+Gui.Form1.lbl4.DefaultValue("")
+Gui.Form1.chkAllDates.Create(checkbox)
+Gui.Form1.chkAllDates.Alignment(0)
+Gui.Form1.chkAllDates.Caption("All Dates")
+Gui.Form1.chkAllDates.Visible(True)
+Gui.Form1.chkAllDates.Size(1935,255)
+Gui.Form1.chkAllDates.Zorder(0)
+Gui.Form1.chkAllDates.Position(105,1425)
+Gui.Form1.chkAllDates.Enabled(True)
+Gui.Form1.chkAllDates.FontName("Arial")
+Gui.Form1.chkAllDates.FontSize(8)
+Gui.Form1.chkAllDates.TabStop(True)
+Gui.Form1.chkAllDates.TabIndex(32)
+Gui.Form1.chkAllDates.Tooltip("")
+Gui.Form1.chkAllDates.ControlGroup(0)
+Gui.Form1.chkAllDates.DefaultValue("")
+Gui.Form1.chkAllDates.Event(Click,chkalldates_click)
+Gui.Form1.lbl5.Create(label,"Ending Customer",True,1935,255,1,2775,2925,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl5.Tooltip("")
+Gui.Form1.lbl5.ControlGroup(0)
+Gui.Form1.lbl5.DefaultValue("")
+Gui.Form1.cmdBegCust.Create(button)
+Gui.Form1.cmdBegCust.Caption("^")
+Gui.Form1.cmdBegCust.Visible(True)
+Gui.Form1.cmdBegCust.Size(420,375)
+Gui.Form1.cmdBegCust.Zorder(0)
+Gui.Form1.cmdBegCust.Position(2175,3150)
+Gui.Form1.cmdBegCust.Enabled(True)
+Gui.Form1.cmdBegCust.FontName("Arial")
+Gui.Form1.cmdBegCust.FontSize(8)
+Gui.Form1.cmdBegCust.TabStop(True)
+Gui.Form1.cmdBegCust.TabIndex(12)
+Gui.Form1.cmdBegCust.Tooltip("")
+Gui.Form1.cmdBegCust.ControlGroup(0)
+Gui.Form1.cmdBegCust.DefaultValue("")
+Gui.Form1.cmdBegCust.Event(Click,cmdbegcust_click)
+Gui.Form1.cmdEndCust.Create(button)
+Gui.Form1.cmdEndCust.Caption("^")
+Gui.Form1.cmdEndCust.Visible(True)
+Gui.Form1.cmdEndCust.Size(420,375)
+Gui.Form1.cmdEndCust.Zorder(0)
+Gui.Form1.cmdEndCust.Position(4800,3150)
+Gui.Form1.cmdEndCust.Enabled(True)
+Gui.Form1.cmdEndCust.FontName("Arial")
+Gui.Form1.cmdEndCust.FontSize(8)
+Gui.Form1.cmdEndCust.TabStop(True)
+Gui.Form1.cmdEndCust.TabIndex(14)
+Gui.Form1.cmdEndCust.Tooltip("")
+Gui.Form1.cmdEndCust.ControlGroup(0)
+Gui.Form1.cmdEndCust.DefaultValue("")
+Gui.Form1.cmdEndCust.Event(Click,cmdendcust_click)
+Gui.Form1.cmdAdd.Create(button)
+Gui.Form1.cmdAdd.Caption("Add")
+Gui.Form1.cmdAdd.Visible(True)
+Gui.Form1.cmdAdd.Size(1200,375)
+Gui.Form1.cmdAdd.Zorder(0)
+Gui.Form1.cmdAdd.Position(5370,3150)
+Gui.Form1.cmdAdd.Enabled(True)
+Gui.Form1.cmdAdd.FontName("Arial")
+Gui.Form1.cmdAdd.FontSize(8)
+Gui.Form1.cmdAdd.TabStop(True)
+Gui.Form1.cmdAdd.TabIndex(15)
+Gui.Form1.cmdAdd.Tooltip("")
+Gui.Form1.cmdAdd.ControlGroup(0)
+Gui.Form1.cmdAdd.DefaultValue("")
+Gui.Form1.cmdAdd.Event(Click,cmdadd_click)
+Gui.Form1.chkAllCust.Create(checkbox)
+Gui.Form1.chkAllCust.Alignment(0)
+Gui.Form1.chkAllCust.Caption("All Customers")
+Gui.Form1.chkAllCust.Visible(True)
+Gui.Form1.chkAllCust.Size(1455,255)
+Gui.Form1.chkAllCust.Zorder(0)
+Gui.Form1.chkAllCust.Position(105,3480)
+Gui.Form1.chkAllCust.Enabled(True)
+Gui.Form1.chkAllCust.FontName("Arial")
+Gui.Form1.chkAllCust.FontSize(8)
+Gui.Form1.chkAllCust.TabStop(True)
+Gui.Form1.chkAllCust.TabIndex(16)
+Gui.Form1.chkAllCust.Tooltip("")
+Gui.Form1.chkAllCust.ControlGroup(0)
+Gui.Form1.chkAllCust.DefaultValue("")
+Gui.Form1.chkAllCust.Event(Click,chkallcust_click)
+Gui.Form1.lvw1.Create(listview)
+Gui.Form1.lvw1.Visible(True)
+Gui.Form1.lvw1.Size(6450,2175)
+Gui.Form1.lvw1.Zorder(0)
+Gui.Form1.lvw1.Position(105,3750)
+Gui.Form1.lvw1.Enabled(True)
+Gui.Form1.lvw1.BorderStyle(1)
+Gui.Form1.lvw1.FontName("Arial")
+Gui.Form1.lvw1.FontSize(8)
+Gui.Form1.lvw1.TabStop(True)
+Gui.Form1.lvw1.TabIndex(38)
+Gui.Form1.lvw1.Tooltip("")
+Gui.Form1.lvw1.View(3)
+Gui.Form1.lvw1.AddListViewColumn("Beginning Customer",2055,0)
+Gui.Form1.lvw1.AddListViewColumn("Ending Customer",2445,0)
+Gui.Form1.cmdDelete.Create(button)
+Gui.Form1.cmdDelete.Caption("Delete")
+Gui.Form1.cmdDelete.Visible(True)
+Gui.Form1.cmdDelete.Size(1200,375)
+Gui.Form1.cmdDelete.Zorder(0)
+Gui.Form1.cmdDelete.Position(105,5985)
+Gui.Form1.cmdDelete.Enabled(True)
+Gui.Form1.cmdDelete.FontName("Arial")
+Gui.Form1.cmdDelete.FontSize(8)
+Gui.Form1.cmdDelete.TabStop(True)
+Gui.Form1.cmdDelete.TabIndex(17)
+Gui.Form1.cmdDelete.Tooltip("")
+Gui.Form1.cmdDelete.ControlGroup(0)
+Gui.Form1.cmdDelete.DefaultValue("")
+Gui.Form1.cmdDelete.Event(Click,cmddelete_click)
+Gui.Form1.cmdClear.Create(button)
+Gui.Form1.cmdClear.Caption("Clear")
+Gui.Form1.cmdClear.Visible(True)
+Gui.Form1.cmdClear.Size(1200,375)
+Gui.Form1.cmdClear.Zorder(0)
+Gui.Form1.cmdClear.Position(1365,5985)
+Gui.Form1.cmdClear.Enabled(True)
+Gui.Form1.cmdClear.FontName("Arial")
+Gui.Form1.cmdClear.FontSize(8)
+Gui.Form1.cmdClear.TabStop(True)
+Gui.Form1.cmdClear.TabIndex(18)
+Gui.Form1.cmdClear.Tooltip("")
+Gui.Form1.cmdClear.ControlGroup(0)
+Gui.Form1.cmdClear.DefaultValue("")
+Gui.Form1.cmdClear.Event(Click,cmdclear_click)
+Gui.Form1.chk4.Create(checkbox)
+Gui.Form1.chk4.Alignment(0)
+Gui.Form1.chk4.Caption("Export to Excel")
+Gui.Form1.chk4.Visible(True)
+Gui.Form1.chk4.Size(1935,255)
+Gui.Form1.chk4.Zorder(0)
+Gui.Form1.chk4.Position(105,6810)
+Gui.Form1.chk4.Enabled(True)
+Gui.Form1.chk4.FontName("Arial")
+Gui.Form1.chk4.FontSize(8)
+Gui.Form1.chk4.TabStop(True)
+Gui.Form1.chk4.TabIndex(20)
+Gui.Form1.chk4.Tooltip("")
+Gui.Form1.chk4.ControlGroup(0)
+Gui.Form1.chk4.DefaultValue("")
+Gui.Form1.cmdPrint.Create(button)
+Gui.Form1.cmdPrint.Caption("Print")
+Gui.Form1.cmdPrint.Visible(True)
+Gui.Form1.cmdPrint.Size(1200,375)
+Gui.Form1.cmdPrint.Zorder(0)
+Gui.Form1.cmdPrint.Position(105,7140)
+Gui.Form1.cmdPrint.Enabled(True)
+Gui.Form1.cmdPrint.FontName("Arial")
+Gui.Form1.cmdPrint.FontSize(8)
+Gui.Form1.cmdPrint.TabStop(True)
+Gui.Form1.cmdPrint.TabIndex(21)
+Gui.Form1.cmdPrint.Tooltip("")
+Gui.Form1.cmdPrint.ControlGroup(0)
+Gui.Form1.cmdPrint.DefaultValue("")
+Gui.Form1.cmdPrint.Event(Click,cmdprint_click)
+Gui.Form1.chkClosedReqs.Create(checkbox)
+Gui.Form1.chkClosedReqs.Alignment(0)
+Gui.Form1.chkClosedReqs.Caption("Include Closed Reqs")
+Gui.Form1.chkClosedReqs.Visible(True)
+Gui.Form1.chkClosedReqs.Size(1935,255)
+Gui.Form1.chkClosedReqs.Zorder(0)
+Gui.Form1.chkClosedReqs.Position(105,6480)
+Gui.Form1.chkClosedReqs.Enabled(True)
+Gui.Form1.chkClosedReqs.FontName("Arial")
+Gui.Form1.chkClosedReqs.FontSize(8)
+Gui.Form1.chkClosedReqs.TabStop(True)
+Gui.Form1.chkClosedReqs.TabIndex(19)
+Gui.Form1.chkClosedReqs.Tooltip("")
+Gui.Form1.chkClosedReqs.ControlGroup(0)
+Gui.Form1.chkClosedReqs.DefaultValue("")
+Gui.Form1.txtLoc.Create(textbox,"",True,1995,300,0,105,2025,True,0,"Arial",8,-2147483643,1)
+Gui.Form1.txtLoc.Text("")
+Gui.Form1.txtLoc.TabStop(True)
+Gui.Form1.txtLoc.TabIndex(5)
+Gui.Form1.txtLoc.Tooltip("")
+Gui.Form1.txtLoc.ControlGroup(0)
+Gui.Form1.txtLoc.DefaultValue("")
+Gui.Form1.lbl6.Create(label,"Location",True,1365,255,0,105,1800,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl6.Tooltip("")
+Gui.Form1.lbl6.ControlGroup(0)
+Gui.Form1.lbl6.DefaultValue("")
+Gui.Form1.cmdLoc.Create(button)
+Gui.Form1.cmdLoc.Caption("^")
+Gui.Form1.cmdLoc.Visible(True)
+Gui.Form1.cmdLoc.Size(420,375)
+Gui.Form1.cmdLoc.Zorder(0)
+Gui.Form1.cmdLoc.Position(2175,2025)
+Gui.Form1.cmdLoc.Enabled(True)
+Gui.Form1.cmdLoc.FontName("Arial")
+Gui.Form1.cmdLoc.FontSize(8)
+Gui.Form1.cmdLoc.TabStop(True)
+Gui.Form1.cmdLoc.TabIndex(6)
+Gui.Form1.cmdLoc.Tooltip("")
+Gui.Form1.cmdLoc.ControlGroup(0)
+Gui.Form1.cmdLoc.DefaultValue("")
+Gui.Form1.cmdLoc.Event(Click,cmdloc_click)
+Gui.Form1.txtSalesmn.Create(textbox,"",True,1995,300,0,2775,2025,True,0,"Arial",8,-2147483643,1)
+Gui.Form1.txtSalesmn.Text("")
+Gui.Form1.txtSalesmn.TabStop(True)
+Gui.Form1.txtSalesmn.TabIndex(7)
+Gui.Form1.txtSalesmn.Tooltip("")
+Gui.Form1.txtSalesmn.ControlGroup(0)
+Gui.Form1.txtSalesmn.DefaultValue("")
+Gui.Form1.txtSalesmn.Event(Change,txtsalesmn_change)
+Gui.Form1.cmdSalesPerson.Create(button)
+Gui.Form1.cmdSalesPerson.Caption("^")
+Gui.Form1.cmdSalesPerson.Visible(True)
+Gui.Form1.cmdSalesPerson.Size(420,375)
+Gui.Form1.cmdSalesPerson.Zorder(0)
+Gui.Form1.cmdSalesPerson.Position(4800,2025)
+Gui.Form1.cmdSalesPerson.Enabled(True)
+Gui.Form1.cmdSalesPerson.FontName("Arial")
+Gui.Form1.cmdSalesPerson.FontSize(8)
+Gui.Form1.cmdSalesPerson.TabStop(True)
+Gui.Form1.cmdSalesPerson.TabIndex(8)
+Gui.Form1.cmdSalesPerson.Tooltip("")
+Gui.Form1.cmdSalesPerson.ControlGroup(0)
+Gui.Form1.cmdSalesPerson.DefaultValue("")
+Gui.Form1.cmdSalesPerson.Event(Click,cmdsalesperson_click)
+Gui.Form1.chkAllSPandLoc.Create(checkbox)
+Gui.Form1.chkAllSPandLoc.Alignment(0)
+Gui.Form1.chkAllSPandLoc.Caption("All Locations and Sales Persons")
+Gui.Form1.chkAllSPandLoc.Visible(True)
+Gui.Form1.chkAllSPandLoc.Size(2790,195)
+Gui.Form1.chkAllSPandLoc.Zorder(0)
+Gui.Form1.chkAllSPandLoc.Position(105,2415)
+Gui.Form1.chkAllSPandLoc.Enabled(True)
+Gui.Form1.chkAllSPandLoc.FontName("Arial")
+Gui.Form1.chkAllSPandLoc.FontSize(8)
+Gui.Form1.chkAllSPandLoc.TabStop(True)
+Gui.Form1.chkAllSPandLoc.TabIndex(10)
+Gui.Form1.chkAllSPandLoc.Tooltip("")
+Gui.Form1.chkAllSPandLoc.ControlGroup(0)
+Gui.Form1.chkAllSPandLoc.DefaultValue("")
+Gui.Form1.chkAllSPandLoc.Event(Click,chkallspandloc_click)
+Gui.Form1.lbl7.Create(label,"Sales Person",True,1770,255,0,2775,1800,True,0,"Arial",8,-2147483633,0)
+Gui.Form1.lbl7.Tooltip("")
+Gui.Form1.lbl7.ControlGroup(0)
+Gui.Form1.lbl7.DefaultValue("")
+Gui.Form1.chkAllLocsForSales.Create(checkbox)
+Gui.Form1.chkAllLocsForSales.Alignment(0)
+Gui.Form1.chkAllLocsForSales.Caption("All Locs for Salesman")
+Gui.Form1.chkAllLocsForSales.Visible(True)
+Gui.Form1.chkAllLocsForSales.Size(1170,630)
+Gui.Form1.chkAllLocsForSales.Zorder(0)
+Gui.Form1.chkAllLocsForSales.Position(5370,2025)
+Gui.Form1.chkAllLocsForSales.Enabled(True)
+Gui.Form1.chkAllLocsForSales.FontName("Arial")
+Gui.Form1.chkAllLocsForSales.FontSize(8)
+Gui.Form1.chkAllLocsForSales.TabStop(True)
+Gui.Form1.chkAllLocsForSales.TabIndex(9)
+Gui.Form1.chkAllLocsForSales.Tooltip("")
+Gui.Form1.chkAllLocsForSales.ControlGroup(0)
+Gui.Form1.chkAllLocsForSales.DefaultValue("")
+Gui.Form1.chkAllLocsForSales.Event(Click,chkalllocsforsales_click)
+
+
+Gui.Form2..Create
+Gui.Form2..Caption("Select Sales Person")
+Gui.Form2..Size(7905,6285)
+Gui.Form2..Position(0,0)
+Gui.Form2..AlwaysOnTop(False)
+Gui.Form2..FontName("Arial")
+Gui.Form2..FontSize(8)
+Gui.Form2..ForeColor(0)
+Gui.Form2..Backcolor(-2147483633)
+Gui.Form2..ControlBox(True)
+Gui.Form2..MaxButton(True)
+Gui.Form2..MinButton(True)
+Gui.Form2..MousePointer(0)
+Gui.Form2..Moveable(True)
+Gui.Form2..Sizeable(True)
+Gui.Form2..ShowInTaskBar(True)
+Gui.Form2..TitleBar(True)
+Gui.Form2..Event(UnLoad,form2_unload)
+Gui.Form2..minx(0)
+Gui.Form2..miny(0)
+Gui.Form2.gsflexgrid1.Create(gsflexgrid)
+Gui.Form2.gsflexgrid1.Visible(True)
+Gui.Form2.gsflexgrid1.Size(7620,5355)
+Gui.Form2.gsflexgrid1.Zorder(0)
+Gui.Form2.gsflexgrid1.Position(0,0)
+Gui.Form2.gsflexgrid1.Enabled(True)
+Gui.Form2.gsflexgrid1.FixedRows(0)
+Gui.Form2.gsflexgrid1.FixedCols(0)
+Gui.Form2.gsflexgrid1.event(CommandClick,gsflexgrid1_commandclick)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Variable.Global.iKey.Declare(Long,0)
+Variable.Global.sUser.Declare(String)
+
+V.UDT.uServReq.Define("TERMINAL",STRING,"")
+V.UDT.uServReq.Define("REQUEST_NUMBER",STRING,"REQUEST_NUMBER")
+V.UDT.uServReq.Define("NAME",STRING,"NAME")
+V.UDT.uServReq.Define("SUBJECT",STRING,"SUBJECT")
+V.UDT.uServReq.Define("CUSTOMER",STRING,"CUSTOMER")
+V.UDT.uServReq.Define("REQ_TYPE",STRING,"REQ_TYPE")
+V.UDT.uServReq.Define("DATE_ENTERED",STRING,"DATE_ENTERED")
+V.UDT.uServReq.Define("STATUS",STRING,"STATUS")
+V.UDT.uServReq.Define("PRIORITY",LONG,"PRIORITY")
+V.UDT.uServReq.Define("DATE_LAST_UPDATE",STRING,"DATE_LAST_UPDATE")
+V.UDT.uServReq.Define("RESPONSIBLE",STRING,"RESPONSIBLE")
+V.UDT.uServReq.Define("CONTACT",STRING,"CONTACT")
+V.UDT.uServReq.Define("PHONE",STRING,"PHONE")
+V.UDT.uServReq.Define("EMAIL",STRING,"EMAIL")
+V.UDT.uServReq.Define("CUST_PO",STRING,"CUST_PO")
+V.UDT.uServReq.Define("SALES_ORD",STRING,"SALES_ORD")
+V.UDT.uServReq.Define("DEFAULT_LOC",STRING,"DEFAULT_LOC")
+V.UDT.uServReq.Define("PART",STRING,"PART")
+V.UDT.uServReq.Define("LOCN",STRING,"LOCN")
+V.UDT.uServReq.Define("SALESPERSON",STRING,"")
+V.UDT.uServReq.Define("NAME_CUSTOMER_SHIP",STRING,"")
+V.UDT.uServReq.Define("ADDRESS1_SHIP",STRING,"")
+V.UDT.uServReq.Define("ADDRESS2_SHIP",STRING,"")
+V.UDT.uServReq.Define("CITY_SHIP",STRING,"")
+V.UDT.uServReq.Define("STATE_SHIP",STRING,"")
+V.UDT.uServReq.Define("CODE_ZIP_SHIP",STRING,"")
+V.UDT.uServReq.Define("COUNTRY_SHIP",STRING,"")
+
+Variable.uGlobal.uServReq.Declare("uServReq")
+
+V.UDT.uCustAddress.Define("CUSTOMER",STRING,"CUSTOMER")
+V.UDT.uCustAddress.Define("NAME_CUSTOMER_SHIP",STRING,"NAME_CUSTOMER_SHIP")
+V.UDT.uCustAddress.Define("ADDRESS1_SHIP",STRING,"ADDRESS1_SHIP")
+V.UDT.uCustAddress.Define("ADDRESS2_SHIP",STRING,"ADDRESS2_SHIP")
+V.UDT.uCustAddress.Define("CITY_SHIP",STRING,"CITY_SHIP")
+V.UDT.uCustAddress.Define("STATE_SHIP",STRING,"STATE_SHIP")
+V.UDT.uCustAddress.Define("CODE_ZIP_SHIP",STRING,"CODE_ZIP_SHIP")
+V.UDT.uCustAddress.Define("COUNTRY_SHIP",STRING,"COUNTRY_SHIP")
+Variable.uGlobal.uCustAddress.Declare("uCustAddress")
+
+V.UDT.uActNotes.Define("PROBLEM",STRING,"")
+V.UDT.uActNotes.Define("ACTION",STRING,"ACTION")
+V.UDT.uActNotes.Define("REQ_NUM",STRING,"REQ_NUM")
+V.UDT.uActNotes.Define("REC_ID",LONG,"REC_ID")
+V.UDT.uActNotes.Define("TERMINAL",STRING,"")
+Variable.uGlobal.uActNotes.Declare("uActNotes")
+
+V.UDT.uRMA.Define("TERMINAL",STRING,"")
+V.UDT.uRMA.Define("RMA_ID",STRING,"RMA_ID")
+V.UDT.uRMA.Define("ORDER_NO",STRING,"ORDER_NO")
+V.UDT.uRMA.Define("SALESMAN",STRING,"SALESMAN")
+Variable.uGlobal.uRMA.Declare("uRMA")
+
+V.UDT.uSalesName.Define("TERMINAL",STRING,"")
+V.UDT.uSalesName.Define("ID",STRING,"ID")
+V.UDT.uSalesName.Define("NAME",STRING,"NAME")
+V.UDT.uSalesName.Define("CUSTOMER",STRING,"")
+Variable.uGlobal.uSalesName.Declare("uSalesName")
+
+V.UDT.uCRMassign.Define("CUSTOMER",STRING,"CUSTOMER")
+V.UDT.uCRMassign.Define("SALEPERSON",STRING,"SALESPERSON")
+V.UDT.uCRMassign.Define("DEFAULT_LOC",STRING,"DEFAULT_LOC")
+V.UDT.uCRMassign.Define("ASSGN_USR_GRP",STRING,"ASSGN_USR_GRP")
+Variable.Global.bSV.Declare(Boolean,False)
+Variable.uGlobal.uCRMassign.Declare("uCRMassign")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iD.Declare(Long)
+'Coded by AGM
+'Quote 6250-0
+'2/25/2015
+F.ODBC.connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.puser,V.Ambient.PPass,20000)
+F.Intrinsic.Control.CallSub(Project_errormsg)
+Gui.Form1.chkAllSPandLoc.Value(1)
+Gui.Form1.chkAllLocsForSales.Enabled(False)
+V.Global.sUser.Set(V.Caller.User.Trim)
+'V.Global.sUser.Set("AGM")
+'V.Global.bSV.Set(True)
+
+'If User is CRM Supervisor, access will be granted to all customers
+F.Global.Security.GetUserId(V.Global.sUser,V.Caller.CompanyCode,V.Local.iD)
+' Variable.Ambient.Ccon, Variable.Ambient.Cuser, Variable.Ambient.Cpass.
+
+F.ODBC.Connection!ComConx.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+	F.Intrinsic.String.Build("SELECT * FROM USER_OPTIONS_COM WHERE OPTION_ID = '1010' AND SEQ = '0' AND USER_ID = '{0}' And Company ='{1}'",V.Local.iD,V.Caller.CompanyCode,V.Local.sSQL)
+	F.ODBC.Connection!ComConx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.ComConx!rst.EOF,=,False)
+		V.Global.bSV.Set(V.ODBC.ComConx!rst.FieldValTrim!BVAL)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.ComConx!rst.Close
+F.ODBC.Connection!ComConx.Close
+
+Gui.Form1..Visible(True)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.Project_ErrorMsg.Start
+F.Intrinsic.Control.SetErrorHandler("Project_ErrorMsg_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'Error message which tells the user which tables are missing and which ARC Project numbers are also required with this report.
+V.Global.sE_Msg.Declare(String)
+F.Intrinsic.String.Build("Table missing: #TABLE#{0}Available in ARC Project: #PROJECT#{1}",V.Ambient.Newline,V.Ambient.Newline,V.Global.sE_Msg)
+F.Intrinsic.String.Build("{0}NOTE: This a customer specific project. Required ARC Projects are: 1093",V.Global.sE_Msg,V.Global.sE_Msg)
+'F.Intrinsic.UI.Msgbox(V.Global.sE_Msg)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Project_ErrorMsg_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Project_ErrorMsg.End
+
+Program.Sub.GetLocsFromUser.Start
+F.Intrinsic.Control.SetErrorHandler("GetLocsFromUser_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sUser.Declare(String)
+V.Global.sLocs.Declare(String)
+V.Local.sSQL.Declare(String)
+
+V.Local.bExists.Declare(Boolean,False)
+F.ODBC.Connection!conx.TableExists("GCG_MIR_USER_MAINT",V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.String.Replace(V.Global.sE_Msg,"#TABLE#","GCG_MIR_USER_MAINT",V.Global.sE_Msg)
+	F.Intrinsic.String.Replace(V.Global.sE_Msg,"#PROJECT#","1093",V.Global.sE_Msg)
+	F.Intrinsic.UI.Msgbox(V.Global.sE_Msg)
+	F.Intrinsic.Control.CallSub(Project_errormsg)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'If user is NOT CRM Supervisor, retrieve assigned locations
+F.Intrinsic.Control.If(V.Global.bSV,=,False)
+	V.Global.sLocs.Set("('")
+	F.Intrinsic.String.Concat("SELECT LOCATION FROM GCG_MIR_USER_MAINT WHERE GS_USER = '",V.Global.sUser.Trim,"' AND ACCESS = 'True'",V.local.sSQL)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+			F.Intrinsic.Control.If(V.Global.sLocs,=,"('")
+				F.Intrinsic.String.Concat(V.Global.sLocs,V.ODBC.conx!rst.FieldValTrim!LOCATION,"'",V.Global.sLocs)
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Concat(V.Global.sLocs,",'",V.ODBC.conx!rst.FieldValTrim!LOCATION,"'",V.Global.sLocs)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.conx!rst.MoveNext
+		F.Intrinsic.Control.Loop
+		F.Intrinsic.String.Concat(V.Global.sLocs,")",V.Global.sLocs)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("You do not currently have access to any Branch Locations. Please contact your administrator")
+		F.Intrinsic.Control.CallSub(Form1_unload)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GetLocsFromUser_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GetLocsFromUser.End
+
+Program.Sub.cmdreqtype_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdreqtype_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.sRet.Declare(String)
+
+'Request Type browser
+V.Local.sSQL.Set("SELECT REQ_TYPE FROM CUST_SERV_REQ_TYP")
+F.Intrinsic.String.Split("Request Type","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("3000","*!*",V.Local.iWidths)
+
+F.Intrinsic.UI.Browser("Select a Request Type","conx",V.Local.sSQL,V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"<>","***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form1.txtReqType.Text(V.Local.sRet.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdreqtype_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdreqtype_click.End
+
+Program.Sub.cmdbegcust_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdbegcust_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.sRet.Declare(String)
+
+'Beginning Customer browser
+F.Intrinsic.Control.CallSub(Getlocsfromuser)
+V.Local.bExists.Declare(Boolean,False)
+F.ODBC.Connection!conx.TableExists("GCG_MIR_USER_MAINT",V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Global.bSV,=,True)
+	V.Local.sSQL.Set("Select V_customer_Master.Customer, V_Customer_Master.Name_Customer, V_Cust_Form_Info.Default_Loc From V_Customer_Master Left Join V_Cust_Form_Info on V_Customer_Master.Customer = V_Cust_Form_Info.Customer Order by V_Customer_Master.Customer")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Build("Select V_customer_Master.Customer, V_Customer_Master.Name_Customer, V_Cust_Form_Info.Default_Loc From V_Customer_Master Left Join V_Cust_Form_Info on V_Customer_Master.Customer = V_Cust_Form_Info.Customer Where Default_Loc IN {0} Order by V_Customer_Master.Customer",V.Global.sLocs,V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+'F.Intrinsic.String.Build("SELECT DISTINCT CUSTOMER, NAME, V_CUST_FORM_INFO.DEFAULT_LOC FROM CUST_SERV_REQ LEFT JOIN V_CUST_FORM_INFO ON CUST_SERV_REQ.CUSTOMER=V_CUST_FORM_INFO.CUSTOMER Where Default_Loc IN {0}",V.Global.sLocs,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,True)
+	F.Intrinsic.UI.Msgbox("No records found","Error")
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rst.Close
+
+F.Intrinsic.String.Split("Customer*!*Customer Name*!*Location","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("3000*!*4500*!*1000","*!*",V.Local.iWidths)
+F.Intrinsic.UI.Browser("Select Customer","conx",V.Local.sSQL,V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"<>","***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form1.txtBegCust.Text(V.Local.sRet(0))
+	Gui.Form1.txtENdCust.Text(V.Local.sRet(0))
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdbegcust_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdbegcust_click.End
+
+Program.Sub.cmdendcust_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdendcust_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(String)
+V.Local.sRet.Declare(String)
+
+'Beginning Customer browser
+F.Intrinsic.Control.CallSub(Getlocsfromuser)
+V.Local.bExists.Declare(Boolean,False)
+F.ODBC.Connection!conx.TableExists("GCG_MIR_USER_MAINT",V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Global.bSV,=,True)
+	V.Local.sSQL.Set("Select V_customer_Master.Customer, V_Customer_Master.Name_Customer, V_Cust_Form_Info.Default_Loc From V_Customer_Master Left Join V_Cust_Form_Info on V_Customer_Master.Customer = V_Cust_Form_Info.Customer Order by V_Customer_Master.Customer")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Build("Select V_customer_Master.Customer, V_Customer_Master.Name_Customer, V_Cust_Form_Info.Default_Loc From V_Customer_Master Left Join V_Cust_Form_Info on V_Customer_Master.Customer = V_Cust_Form_Info.Customer Where Default_Loc IN {0} Order by V_Customer_Master.Customer",V.Global.sLocs,V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+'F.Intrinsic.String.Build("SELECT DISTINCT CUSTOMER, NAME, V_CUST_FORM_INFO.DEFAULT_LOC FROM CUST_SERV_REQ LEFT JOIN V_CUST_FORM_INFO ON CUST_SERV_REQ.CUSTOMER=V_CUST_FORM_INFO.CUSTOMER Where Default_Loc IN {0}",V.Global.sLocs,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,True)
+	F.Intrinsic.UI.Msgbox("No records found","Error")
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rst.Close
+
+F.Intrinsic.String.Split("Customer*!*Customer Name*!*Location","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("3000*!*4500*!*1000","*!*",V.Local.iWidths)
+F.Intrinsic.UI.Browser("Select Customer","conx",V.Local.sSQL,V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,"<>","***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form1.txtENdCust.Text(V.Local.sRet(0))
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdendcust_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdendcust_click.End
+
+Program.Sub.cmdadd_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdadd_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sBeg.Declare(String)
+V.Local.sEnd.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!txtBegCust.Text,<>,"")
+F.Intrinsic.Control.AndIf(V.Screen.Form1!txtENdCust.Text,<>,"")
+
+	F.Intrinsic.Math.Add(V.global.iKey,1,V.global.iKey)
+	V.Local.sBeg.Set(V.Screen.Form1!txtBegCust.Text)
+	V.Local.sEnd.Set(V.Screen.Form1!txtENdCust.Text)
+	Gui.Form1.lvw1.AddListItem(V.global.iKey,V.Local.sBeg.Trim)
+	Gui.Form1.lvw1.SetListItemSubItemText(V.global.iKey,1,V.Local.sEnd.Trim)
+	Gui.Form1.txtBegCust.Text("")
+	Gui.Form1.txtENdCust.Text("")
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdadd_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdadd_click.End
+
+Program.Sub.chkallcust_click.Start
+F.Intrinsic.Control.SetErrorHandler("chkallcust_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllCust.Value,=,1)
+	Gui.Form1.txtBegCust.Enabled(False)
+	Gui.Form1.txtENdCust.Enabled(False)
+	Gui.Form1.cmdAdd.Enabled(False)
+	Gui.Form1.cmdBegCust.Enabled(False)
+	Gui.Form1.cmdEndCust.Enabled(False)
+	Gui.Form1.txtBegCust.Text("")
+	Gui.Form1.txtENdCust.Text("")
+	Gui.Form1.cmdClear.Enabled(False)
+	Gui.Form1.cmdDelete.Enabled(False)
+	Gui.Form1.lvw1.ClearItems
+F.Intrinsic.Control.Else
+	Gui.Form1.txtBegCust.Enabled(True)
+	Gui.Form1.txtENdCust.Enabled(True)
+	Gui.Form1.cmdAdd.Enabled(True)
+	Gui.Form1.cmdBegCust.Enabled(True)
+	Gui.Form1.cmdEndCust.Enabled(True)
+	Gui.Form1.cmdClear.Enabled(True)
+	Gui.Form1.cmdDelete.Enabled(True)
+	Gui.Form1.lvw1.ClearItems
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkallcust_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkallcust_click.End
+
+Program.Sub.chkalldates_click.Start
+F.Intrinsic.Control.SetErrorHandler("chkalldates_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllDates.Value,=,1)
+	Gui.Form1.datepicker1.Enabled(False)
+	Gui.Form1.datepicker2.Enabled(False)
+F.Intrinsic.Control.Else
+	Gui.Form1.datepicker1.Enabled(True)
+	Gui.Form1.datepicker2.Enabled(True)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkalldates_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkalldates_click.End
+
+Program.Sub.chkallreqs_click.Start
+F.Intrinsic.Control.SetErrorHandler("chkallreqs_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllReqs.Value,=,1)
+	Gui.Form1.txtReqType.Text("")
+	Gui.Form1.txtReqType.Enabled(False)
+	Gui.Form1.cmdReqType.Enabled(False)
+F.Intrinsic.Control.Else
+	Gui.Form1.txtReqType.Enabled(True)
+	Gui.Form1.cmdReqType.Enabled(True)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkallreqs_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkallreqs_click.End
+
+Program.Sub.cmddelete_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmddelete_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iKey.Declare(Long)
+V.Local.iOrd.Declare(Long)
+
+
+V.Local.iKey.Set(V.Screen.Form1!lvw1.SelectedItemKey)
+Gui.Form1.lvw1.RemoveItem(V.Local.iKey)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmddelete_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmddelete_click.End
+
+Program.Sub.cmdprint_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdprint_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQLClosedFlag.Declare(String)
+V.Local.sSQLRecType.Declare(String)
+V.Local.sSQLDate.Declare(String)
+V.Local.sSQLLocation.Declare(String)
+V.Local.sSQLCustRange.Declare(String)
+V.Local.sSQLSalesMan.Declare(String)
+
+V.Local.sFormat.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sProblemText.Declare(String)
+V.Local.sActionText.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sLoadString.Declare(String)
+V.Local.sDate1.Declare(String)
+V.Local.sDate2.Declare(String)
+V.Local.sGroups.Declare(String)
+V.Local.sUBound.Declare(String)
+V.Local.sCRMquery.Declare(String)
+V.Local.sMsg.Declare(String)
+
+V.Local.sRows.Declare(String)
+V.Local.sRange.Declare(String)
+V.Local.sR1.Declare(String)
+V.Local.sR2.Declare(String)
+V.Local.iOrd.Declare(Long)
+
+V.Local.iRec.Declare(Long)
+V.Local.iC.Declare(Long)
+
+'IF statements to check for needed parameters
+F.Intrinsic.Control.If(V.Screen.Form1!txtBegCust.Text,=,"")
+F.Intrinsic.Control.AndIf(V.Screen.Form1!chkAllCust.Value,=,0)
+	F.Intrinsic.Control.If(V.Global.iKey,=,0)
+		F.Intrinsic.UI.Msgbox("Please enter customer criteria","Error")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'If absolutly nothing has been entered for the Location and saleperson criteria exitsub
+F.Intrinsic.Control.If(V.Screen.Form1!txtLoc.Text,=,"")
+	F.Intrinsic.Control.If(V.Screen.Form1!txtSalesmn.Text,=,"")
+		F.Intrinsic.Control.If(V.Screen.Form1!chkAllSPandLoc.Value,=,0)
+			F.Intrinsic.UI.Msgbox("Please select Location or Sales Person Criteria","Error")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.endif
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllReqs.Value,=,0)
+F.Intrinsic.Control.AndIf(V.Screen.Form1!txtReqType.Text,=,"")
+	F.Intrinsic.UI.Msgbox("Please select Request Type criteria","Error")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'*************************************************************
+'******Criteria that will be built into SQL Query*************
+'*************************************************************
+F.Intrinsic.Control.CallSub(Getlocsfromuser)
+V.Local.bExists.Declare(Boolean,False)
+F.ODBC.Connection!conx.TableExists("GCG_MIR_USER_MAINT",V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+'For Query 1
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllSPandLoc.Value,=,0)
+	F.Intrinsic.Control.If(V.Screen.Form1!chkAllLocsForSales.Value,=,0)
+		F.Intrinsic.Control.If(V.Screen.Form1!txtLoc.Text,<>,"")
+			F.Intrinsic.String.Build(" WHERE DEFAULT_LOC = '{0}'",V.Screen.Form1!txtLoc.Text,V.Local.sSQLLocation)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("Please enter location criteria","Error")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build(" WHERE DEFAULT_LOC IN {0}",V.Global.sLocs,V.Local.sSQLLocation)
+		F.Intrinsic.Control.If(V.Global.bSV,=,True)
+			V.Local.sSQLLocation.Set(" WHERE NAME <> ''")
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+'F.Intrinsic.Control.ElseIf(V.Screen.Form1!chkAllLocsForSales.Value,=,0)
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Build(" WHERE DEFAULT_LOC IN {0}",V.Global.sLocs,V.Local.sSQLLocation)
+	F.Intrinsic.Control.If(V.Global.bSV,=,True)
+		V.Local.sSQLLocation.Set(" WHERE NAME <> ''")
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'For Query 1
+F.Intrinsic.Control.If(V.Screen.Form1!chkClosedReqs.Value,<>,1)
+	V.Local.sSQLClosedFlag.Set(" AND STATUS <> 'C'")
+F.Intrinsic.Control.EndIf
+
+'For Query 1
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllReqs.Value,<>,1)
+	F.Intrinsic.String.Build(" AND REQ_TYPE = '{0}'",V.Screen.Form1!txtReqType.Text,V.Local.sSQLRecType)
+F.Intrinsic.Control.EndIf
+
+'For Query 1
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllDates.Value,<>,1)
+	F.Intrinsic.String.Format(V.Screen.Form1!datepicker1.Value,"M/D/YYYY",V.Local.sDate1)
+	F.Intrinsic.String.Format(V.Screen.Form1!datepicker2.Value,"M/D/YYYY",V.Local.sDate2)
+	F.Intrinsic.String.Build(" AND DATE_ENTERED BETWEEN '{0}' AND '{1}'",V.Local.sDate1.PervasiveDate,V.Local.sDate2.PervasiveDate,V.Local.sSQLDate)
+F.Intrinsic.Control.EndIf
+
+'For Query 2
+F.Intrinsic.Control.If(V.Screen.Form1!txtSalesmn.Text,<>,"")
+	F.Intrinsic.String.Build(" AND SALESPERSON = '{0}'",V.Screen.Form1!txtSalesmn.Text,V.Local.sSQLSalesMan)
+F.Intrinsic.Control.EndIf
+
+
+'*******************************************************************************
+'******Begin Querying Pulling in Records Based on Selction Criteria*************
+'*******************************************************************************
+
+V.uGlobal.uActNotes.Redim(-1,-1)
+
+V.uGlobal.uServReq.Redim(-1,-1)
+V.uGlobal.uCustAddress.Redim(-1,-1)
+V.uGlobal.uRMA.Redim(-1,-1)
+'Gets values from Cust_Serv_Req
+'Query 1
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllCust.Value,=,1)
+	F.Intrinsic.String.Build("SELECT REQUEST_NUMBER, NAME,SUBJECT, CUSTOMER,REQ_TYPE, DATE_ENTERED, STATUS, PRIORITY, DATE_LAST_UPDATE, RESPONSIBLE, CONTACT, PHONE, EMAIL, CUST_PO, SALES_ORD, PART, LOCN, V_CUST_FORM_INFO.DEFAULT_LOC FROM V_CUST_SERV_REQ LEFT JOIN V_CUST_FORM_INFO ON V_CUST_SERV_REQ.CUSTOMER=V_CUST_FORM_INFO.CUSTOMER {0}{1}{2}{3}",V.Local.sSQLLocation,V.Local.sSQLRecType,V.Local.sSQLDate,V.Local.sSQLClosedFlag,V.Local.sSQL)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,<>,True)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","V.uGlobal.uServReq",False,0)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+F.Intrinsic.Control.Else
+	Gui.Form1.lvw1.RetrieveAllListItems(V.Local.sRows)
+	F.Intrinsic.Control.If(V.Local.sRows,<>,"***NORETURN***")
+		F.Intrinsic.String.Split(V.Local.sRows,"*!*",V.Local.sRows)
+		F.Intrinsic.Control.For(V.Local.iC,0,V.Local.sRows.UBound,1)
+			Gui.Form1.lvw1.RetrieveItemOrdinal(V.Local.sRows(V.Local.iC),V.Local.iOrd)
+			V.Local.sRange.Set(V.Screen.Form1!lvw1.ListItemTextExtended(V.Local.iOrd))
+			F.Intrinsic.String.Split(V.Local.sRange,"*!*",V.Local.sRange)
+				F.Intrinsic.String.Build("SELECT REQUEST_NUMBER, NAME,SUBJECT, CUSTOMER,REQ_TYPE, DATE_ENTERED, STATUS, PRIORITY, DATE_LAST_UPDATE, RESPONSIBLE, CONTACT, PHONE, EMAIL, CUST_PO, SALES_ORD, PART, LOCN, V_CUST_FORM_INFO.DEFAULT_LOC FROM V_CUST_SERV_REQ LEFT JOIN V_CUST_FORM_INFO ON V_CUST_SERV_REQ.CUSTOMER=V_CUST_FORM_INFO.CUSTOMER {0}{1}{2}{3} AND V_CUST_FORM_INFO.CUSTOMER BETWEEN '{4}' AND '{5}'",V.Local.sSQLLocation,V.Local.sSQLRecType,V.Local.sSQLDate,V.Local.sSQLClosedFlag,V.Local.sRange(0),V.Local.sRange(1),V.Local.sSQL)
+				F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,<>,True)
+					F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","V.uGlobal.uServReq",True,0)
+				F.Intrinsic.Control.EndIf
+				F.ODBC.conx!rst.Close
+		F.Intrinsic.Control.Next(V.Local.iC)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Customer criteria not entered","Error")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+'Getting user's Security groups to use to find specific customer that were assigned to them from AR Master.
+F.Intrinsic.Control.If(V.Global.bSV,=,False)
+	F.Global.Security.GetUserGroups(V.Global.sUser,V.Local.sGroups)
+	F.Intrinsic.Control.If(V.Local.sGroups,<>,"")
+		F.Intrinsic.String.Split(V.Local.sGroups,"*!*",V.Local.sUBound)
+		F.Intrinsic.Control.If(V.Local.sUBound.UBound,>,-1)
+			F.Intrinsic.String.Build("{0}*!*{1}",V.Global.sUser,V.Local.sGroups,V.Local.sGroups)
+			F.Intrinsic.String.Replace(V.Local.sGroups,"*!*","', '",V.Local.sGroups)
+			F.Intrinsic.String.Build("('{0}')",V.Local.sGroups,V.Local.sGroups)
+			F.Intrinsic.String.Build(" IN {0}",V.Local.sGroups,V.Local.sCRMquery)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build(" = '{0}'",V.Global.sUser,V.Local.sCRMquery)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build(" = '{0}'",V.Global.sUser,V.Local.sCRMquery)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+'Loading Customer address info
+'Query 2
+
+F.Intrinsic.Control.If(V.uGlobal.uServReq.UBound,<>,-1)
+	F.Intrinsic.Control.If(V.Global.bSV,=,True)
+		F.Intrinsic.Control.If(V.Screen.Form1!txtSalesmn.Text,<>,"")
+			F.Intrinsic.String.Build("  WHERE SALESPERSON = '{0}'",V.Screen.Form1!txtSalesmn.Text,V.Local.sSQLSalesMan)
+		F.Intrinsic.Control.Else
+			V.Local.sSQLSalesMan.Set("")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Build("SELECT V_CUSTOMER_MASTER.CUSTOMER,V_CUSTOMER_MASTER.SALESPERSON,ASSGN_USR_GRP,V_CUST_FORM_INFO.DEFAULT_LOC FROM V_CUST_FORM_INFO RIGHT JOIN V_CUSTOMER_MASTER ON V_CUST_FORM_INFO.CUSTOMER=V_CUSTOMER_MASTER.CUSTOMER {0}",V.Local.sSQLSalesMan,V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Build("Select V_CUSTOMER_MASTER.CUSTOMER,V_CUSTOMER_MASTER.SALESPERSON,ASSGN_USR_GRP,V_CUST_FORM_INFO.DEFAULT_LOC FROM V_CUST_FORM_INFO RIGHT JOIN V_CUSTOMER_MASTER ON V_CUST_FORM_INFO.CUSTOMER=V_CUSTOMER_MASTER.CUSTOMER WHERE ASSGN_USR_GRP {0}{1}",V.Local.sCRMquery,V.Local.sSQLSalesMan,V.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","V.uGlobal.uCRMassign",True)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Records not found","Error")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	'Flagging all customers who aren't assigned to user the AR Master and deleted them from UDT. Unless checked as CRM Supervisor
+	F.Intrinsic.Control.If(V.Global.bSV,=,False)
+		F.Intrinsic.Control.If(V.uGlobal.uCRMassign.UBound,<>,-1)
+			F.Intrinsic.Variable.UDTFlagAll(V.uGlobal.uServReq)
+
+			F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uCRMassign.LBound,V.uGlobal.uCRMassign.UBound,1)
+				F.Intrinsic.Variable.UDTMultiUnFlag(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCRMassign(V.Local.iC)!CUSTOMER)
+			F.Intrinsic.Control.Next(V.Local.iC)
+			F.Intrinsic.Variable.UDTDeleteFlagged(V.uGlobal.uServReq)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.If(V.uGlobal.uServReq.UBound,=,-1)
+			F.Intrinsic.UI.Msgbox("No Records found","Error")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+		F.Intrinsic.String.Build("SELECT CUSTOMER, NAME_CUSTOMER_SHIP, ADDRESS1_SHIP, ADDRESS2_SHIP, CITY_SHIP, STATE_SHIP, CODE_ZIP_SHIP,COUNTRY_SHIP FROM V_CUSTOMER_SHIPTO WHERE CUSTOMER = '{0}'",V.uGlobal.uServReq(V.Local.iC)!CUSTOMER,V.Local.sSQL)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","V.uGlobal.uCustAddress",True)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+	'Looping to get the Action notes
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+
+		F.Intrinsic.String.Build("SELECT * FROM CUST_SERV_NOTES WHERE REQUEST_NUMBER = '{0}' AND REQUEST_TYPE = 'N'",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.sSQL)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+				F.Intrinsic.Control.If(V.ODBC.conx!rst.FieldValTrim!NOTE_SEQ,=,"0001")
+					F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+						F.Intrinsic.String.Build("{0}*!*{1}*!*{2}",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.iRec,V.Local.sRet,V.Local.sLoadString)
+						F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uActNotes,"REQ_NUM*!*REC_ID*!*ACTION",V.Local.sLoadString,"$!$","*!*",True)
+						V.Local.sRet.Set("")
+						V.Local.sLoadString.Set("")
+					F.Intrinsic.Control.EndIf
+					F.Intrinsic.Math.Add(V.Local.iRec,1,V.Local.iRec)
+					F.Intrinsic.String.Build("Action Record {0}: {1} ",V.Local.iRec,V.ODBC.conx!rst.FieldValTrim!TEXT,V.Local.sRet)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("{0}{1} ",V.Local.sRet,V.ODBC.conx!rst.FieldValTrim!TEXT,V.Local.sRet)
+				F.Intrinsic.Control.EndIf
+			F.ODBC.conx!rst.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.EndIf
+
+			'Gets that last action comment
+			F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+				F.Intrinsic.String.Build("{0}*!*{1}*!*{2}",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.iRec,V.Local.sRet,V.Local.sLoadString)
+				F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uActNotes,"REQ_NUM*!*REC_ID*!*ACTION",V.Local.sLoadString,"$!$","*!*",True)
+				V.Local.sRet.Set("")
+				V.Local.sLoadString.Set("")
+				V.Local.iRec.Set(0)
+			F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+	'looping to get the Problem Notes
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uActNotes!PROBLEM,"PROBLEM")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uActNotes!ACTION,"")
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+	V.Local.iRec.Set(-1)
+		F.Intrinsic.String.Build("SELECT * FROM CUST_SERV_NOTES WHERE REQUEST_NUMBER = '{0}' AND REQUEST_TYPE = 'P'",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.sSQL)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+				F.Intrinsic.Control.If(V.ODBC.conx!rst.FieldValTrim!NOTE_SEQ,=,"0001")
+					F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+						F.Intrinsic.String.Build("0*!*{0}*!*{1}",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.sRet,V.Local.sLoadString)
+						F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uActNotes,"REQ_NUM*!*REC_ID*!*PROBLEM",V.Local.sLoadString,"$!$","*!*",True)
+						V.Local.sRet.Set("")
+						V.Local.sLoadString.Set("")
+					F.Intrinsic.Control.EndIf
+					F.Intrinsic.Math.Add(V.Local.iRec,1,V.Local.iRec)
+					F.Intrinsic.String.Build("Problem: {0} ",V.ODBC.conx!rst.FieldValTrim!TEXT,V.Local.sRet)
+				F.Intrinsic.Control.Else
+					F.Intrinsic.String.Build("{0}{1} ",V.Local.sRet,V.ODBC.conx!rst.FieldValTrim!TEXT,V.Local.sRet)
+				F.Intrinsic.Control.EndIf
+			F.ODBC.conx!rst.MoveNext
+			F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.EndIf
+			'Gets that last action comment
+			F.Intrinsic.Control.If(V.Local.sRet,<>,"")
+				F.Intrinsic.String.Build("{0}*!*{1}*!*{2}",V.uGlobal.uServReq(V.Local.iC)!REQUEST_NUMBER,V.Local.iRec,V.Local.sRet,V.Local.sLoadString)
+				F.Intrinsic.Variable.LoadUDTFromString(V.uGlobal.uActNotes,"REQ_NUM*!*REC_ID*!*PROBLEM",V.Local.sLoadString,"$!$","*!*",True)
+				V.Local.sRet.Set("")
+				V.Local.sLoadString.Set("")
+				V.Local.iRec.Set(0)
+			F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iC)
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uActNotes!ACTION,"ACTION")
+
+	'Get RMA Fields
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+		F.Intrinsic.String.Build("SELECT V_RMA_HEADER.RMA_ID, V_RMA_HEADER.ORDER_NO, SALESMAN FROM V_ORDER_HIST_HEAD RIGHT JOIN V_RMA_HEADER ON V_ORDER_HIST_HEAD.ORDER_NO = V_RMA_HEADER.ORDER_NO WHERE V_ORDER_HIST_HEAD.ORDER_NO = '{0}'",V.uGlobal.uServReq(V.Local.iC)!SALES_ORD,V.Local.sSQL)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			F.Intrinsic.Variable.LoadUDTFromRecordset("conx","rst","V.uGlobal.uRMA",True)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+'		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCRMassign(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!SALESPERSON,V.uGlobal.uCRMassign(V.Local.iC)!SALEPERSON)
+		F.Intrinsic.String.Build("SELECT SALESPERSONS.NAME FROM V_CUSTOMER_MASTER RIGHT JOIN SALESPERSONS ON V_CUSTOMER_MASTER.SALESPERSON=SALESPERSONS.ID WHERE CUSTOMER = '{0}'",V.uGlobal.uServReq(V.Local.iC)!CUSTOMER,V.Local.sSQL)
+		F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+			F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uServReq(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!SALESPERSON,V.ODBC.conx!rst.FieldValTrim!NAME)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.Next(V.Local.iC)
+
+
+	F.Intrinsic.Control.CallSub(Loadudt)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("No records found","Error")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdprint_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdprint_click.End
+
+Program.Sub.LoadUDT.Start
+F.Intrinsic.Control.SetErrorHandler("LoadUDT_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iC.Declare(Long)
+V.Local.sSQL.Declare(String)
+
+'Loading customer ship to UDT to ServReq UDT
+F.Intrinsic.Control.If(V.uGlobal.uCustAddress.UBound,<>,-1)
+	'pull by sales order
+	F.Intrinsic.Control.For(V.Local.iC,V.uGlobal.uCustAddress.LBound,V.uGlobal.uCustAddress.UBound,1)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!ADDRESS1_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!ADDRESS1_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!ADDRESS2_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!ADDRESS2_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!CITY_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!CITY_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!CODE_ZIP_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!CODE_ZIP_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!COUNTRY_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!COUNTRY_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!NAME_CUSTOMER_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!NAME_CUSTOMER_SHIP)
+		F.Intrinsic.Variable.UDTMultiSeekSet(V.uGlobal.uServReq!CUSTOMER,V.uGlobal.uCustAddress(V.Local.iC)!CUSTOMER,V.uGlobal.uServReq!STATE_SHIP,V.uGlobal.uCustAddress(V.Local.iC)!STATE_SHIP)
+	F.Intrinsic.Control.Next(V.Local.iC)
+F.Intrinsic.Control.EndIf
+
+'Loading to tables
+F.Intrinsic.Control.If(V.uGlobal.uServReq.UBound,<>,-1)
+	'Deletes previous records that were printed from the user's terminal number
+	F.Intrinsic.String.Build("SELECT * FROM GCG_4013_SERV WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.String.Build("DELETE FROM GCG_4013_SERV WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+		F.ODBC.Connection!conx.Execute(V.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uServReq!TERMINAL,V.Caller.Terminal)
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!TERMINAL,"TERMINAL")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!NAME_CUSTOMER_SHIP,"NAME_CUSTOMER_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!ADDRESS1_SHIP,"ADDRESS1_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!ADDRESS2_SHIP,"ADDRESS2_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!CITY_SHIP,"CITY_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!STATE_SHIP,"STATE_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!CODE_ZIP_SHIP,"CODE_ZIP_SHIP")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uServReq!COUNTRY_SHIP,"COUNTRY_SHIP")
+	F.Intrinsic.variable.SetUDTFieldReference(V.uGlobal.uServReq!SALESPERSON,"SALESPERSON")
+
+	F.ODBC.Connection!conx.OpenRecordsetRW("rst","SELECT * FROM GCG_4013_SERV")
+	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uGlobal.uServReq")
+	F.ODBC.conx!rst.Close
+
+F.Intrinsic.Control.EndIf
+
+'Loads the Problem and Action notes to table.
+F.Intrinsic.Control.If(V.uGlobal.uActNotes.UBound,<>,-1)
+	'Deletes previous records that were printed from the user's terminal number
+	F.Intrinsic.String.Build("SELECT * FROM GCG_4013_NOTES WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.String.Build("DELETE FROM GCG_4013_NOTES WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+		F.ODBC.Connection!conx.Execute(V.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uActNotes!TERMINAL,V.Caller.Terminal)
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uActNotes!TERMINAL,"TERMINAL")
+	F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uActNotes!REQ_NUM,"REQUEST_NUMBER")
+
+	F.ODBC.Connection!conx.OpenRecordsetRW("rst","SELECT * FROM GCG_4013_NOTES")
+	F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uGlobal.uActNotes")
+	F.ODBC.conx!rst.Close
+F.Intrinsic.Control.EndIf
+
+'GCG_4013_RMA
+	F.Intrinsic.String.Build("SELECT * FROM GCG_4013_RMA WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+	'If previous records exist for termial ID, delete them.
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.String.Build("DELETE FROM GCG_4013_RMA WHERE TERMINAL = '{0}'",V.Caller.Terminal,V.Local.sSQL)
+		F.ODBC.Connection!conx.Execute(V.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	F.Intrinsic.Control.If(V.uGlobal.uRMA.UBound,<>,-1)
+		F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.uRMA!TERMINAL,V.Caller.Terminal)
+		F.Intrinsic.Variable.SetUDTFieldReference(V.uGlobal.uRMA!TERMINAL,"TERMINAL")
+		F.ODBC.Connection!conx.OpenRecordsetRW("rst","SELECT * FROM GCG_4013_RMA")
+		F.Intrinsic.Variable.SaveUDTToRecordSet("conx","rst","V.uGlobal.uRMA")
+		F.ODBC.conx!rst.Close
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(callbi)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadUDT_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadUDT.End
+
+Program.Sub.CallBI.Start
+F.Intrinsic.Control.SetErrorHandler("CallBI_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sParams.Declare(String)
+V.Local.sParamVals.Declare(String)
+V.Local.sRptName.Declare(String)
+V.Local.iRpt.Declare(Long)
+
+Gui.Form1..Visible(false)
+V.Local.sParams.Set("Terminal")
+V.Local.sParamVals.Set(V.Caller.Terminal)
+F.Intrinsic.Control.If(V.Screen.Form1!chk4.Value,<>,1)
+	F.Intrinsic.String.Build("{0}\Custom\GCG_4013_SERV_RPT.rpt",V.Caller.BusintDir,V.Local.sRptName)
+	F.Global.BI.InitializeReport("Service Requests",V.Local.sRptName,V.Local.iRpt)
+	F.Global.BI.PrintReport(V.Local.iRpt,0,V.Local.sParams,V.Local.sParamVals,"",False)
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.CallSub(Excel)
+	F.Intrinsic.UI.Msgbox("Excel exported to Global\Busint\Custom\GCG_4013_SERV_RPT.xls")
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("CallBI_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.CallBI.End
+
+Program.Sub.Excel.Start
+F.Intrinsic.Control.SetErrorHandler("Excel_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sDateRet.Declare(String)
+V.Local.sRptName.Declare(String)
+V.Local.sRptTemp.Declare(String)
+V.Local.sSQLnotes.Declare(String)
+V.Local.sSQLRMA.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.i.Declare(long)
+V.Local.iRow.Declare(Long,2)
+V.Local.iCol.Declare(Long,2)
+
+V.Local.bExist.Declare(Boolean)
+
+F.Intrinsic.String.Build("{0}\custom\GCG_4013_SRV_RPT.xls",V.Caller.BusintDir,V.Local.sRptName)
+F.Intrinsic.File.Exists(V.Local.sRptName,V.Local.bExist)
+F.Intrinsic.Control.If(V.Local.bExist,=,True)
+	F.Intrinsic.File.DeleteFile(V.Local.sRptName)
+F.Intrinsic.Control.EndIf
+
+Function.Automation.MSExcel.CreateAppObject("MSExcel")
+Function.Automation.MSExcel.CreateWorkbook("MSExcel","ExcelWB",V.Local.sRptName)
+Function.Automation.MSExcel.OpenWorksheet("ExcelWB","ExcelWS",1)
+
+F.Intrinsic.Control.For(V.Local.i,V.uGlobal.uServReq.LBound,V.uGlobal.uServReq.UBound,1)
+
+	F.Intrinsic.Control.If(V.Local.i,=,0)
+		F.Intrinsic.Control.CallSub(excelhdr)
+	F.Intrinsic.Control.EndIf
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!REQUEST_NUMBER)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!CUSTOMER)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!NAME)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!CONTACT)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!PHONE)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!FAX)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!EMAIL)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!DATE_ENTERED)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!SUBJECT)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!PRIORITY)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!STATUS)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!DATE_LAST_UPDATE)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!REQ_TYPE)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!CUST_PO)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!SALES_ORD)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!PART)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!RESPONSIBLE)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!NAME_CUSTOMER_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!ADDRESS1_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!ADDRESS2_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!CITY_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!STATE_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!CODE_ZIP_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!COUNTRY_SHIP)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!DEFAULT_LOC)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	F.Automation.MSExcel.WriteCell("ExcelWS",v.Local.iRow,V.Local.iCol,V.uGlobal.uServReq(V.Local.i)!SALESPERSON)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+
+	'Sets Problems notes within excel spreadsheet
+	F.Intrinsic.String.Build("SELECT PROBLEM FROM GCG_4013_NOTES WHERE REQUEST_NUMBER = '{0}' AND PROBLEM <> '' AND TERMINAL = '{1}'",V.uGlobal.uServReq(V.Local.i)!REQUEST_NUMBER,V.Caller.Terminal,V.Local.sSQLnotes)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQLnotes)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+		F.Intrinsic.String.Build("Problem for Request ID:{0}",V.uGlobal.uServReq(V.Local.i)!REQUEST_NUMBER,V.Local.sTitle)
+		F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.Local.sTitle)
+		F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+			F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.ODBC.conx!rst.FieldValTrim!PROBLEM)
+		F.ODBC.conx!rst.MoveNext
+		F.Intrinsic.Control.Loop
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	'Sets Actions notes within excel spreadsheet
+	F.Intrinsic.String.Build("SELECT ACTION FROM GCG_4013_NOTES WHERE REQUEST_NUMBER = '{0}' AND ACTION <> '' AND TERMINAL = '{1}'",V.uGlobal.uServReq(V.Local.i)!REQUEST_NUMBER,,V.Local.sSQLnotes)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQLnotes)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+		F.Intrinsic.String.Build("Action for Request ID:{0}",V.uGlobal.uServReq(V.Local.i)!REQUEST_NUMBER,V.Local.sTitle)
+		F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.Local.sTitle)
+		F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+			F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+			F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.ODBC.conx!rst.FieldValTrim!ACTION)
+		F.ODBC.conx!rst.MoveNext
+		F.Intrinsic.Control.Loop
+		F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+
+	'Set RMA records
+	F.Intrinsic.String.Build("SELECT ORDER_NO, RMA_ID FROM V_RMA_HEADER WHERE ORDER_NO = '{0}'",V.uGlobal.uServReq(V.Local.i)!SALES_ORD,V.Local.sSQLRMA)
+	F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQLRMA)
+	F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+		F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+		F.Intrinsic.String.Build("Open RMA IDs For Order No: {0}",V.uGlobal.uServReq(V.Local.i)!SALES_ORD,V.Local.sTitle)
+		F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.Local.sTitle)
+		F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+			F.Intrinsic.Control.If(V.ODBC.conx!rst.FieldValTrim!ORDER_NO,<>,"0000000")
+				F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+				F.Automation.MSExcel.WriteCell("ExcelWS",V.Local.iRow,1,V.ODBC.conx!rst.FieldValTrim!RMA_ID)
+			F.Intrinsic.Control.EndIf
+		F.ODBC.conx!rst.MoveNext
+		F.Intrinsic.Control.Loop
+		F.Intrinsic.Math.Add(V.Local.iRow,1,V.Local.iRow)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.Close
+
+	F.Intrinsic.Math.Add(Variable.Local.iRow,1,Variable.Local.iRow)
+	V.Local.iCol.Set(2)
+
+F.Intrinsic.Control.Next(V.Local.i)
+
+'Save excel file
+Function.Automation.MSExcel.SaveWorkbook("ExcelWB")
+'delete objects
+F.Automation.MSExcel.DestroyAllObjects("MsExcel","ExcelWB","ExcelWS")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Excel_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Excel.End
+
+Program.Sub.ExcelHdr.Start
+F.Intrinsic.Control.SetErrorHandler("ExcelHdr_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Automation.MSExcel.WriteCell("ExcelWS",1,2,"Req Num")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,3,"Customer")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,4,"Name")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,5,"Contact")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,6,"Phone")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,7,"Fax")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,8,"Email")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,9,"Date Entered")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,10,"Subject")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,11,"Priority")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,12,"Status")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,13,"Date update")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,14,"Req Type")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,15,"Cust PO")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,16,"Sales Order")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,17,"Part")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,18,"Responsible")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,19,"Name Customer Ship")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,20,"Address 1")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,21,"Address 2")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,22,"City")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,23,"State")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,24,"ZIP")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,25,"Country")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,26,"Location")
+F.Automation.MSExcel.WriteCell("ExcelWS",1,27,"Salesman")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ExcelHdr_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ExcelHdr.End
+
+Program.Sub.form1_unload.Start
+F.Intrinsic.Control.SetErrorHandler("form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conx.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.form1_unload.End
+
+Program.Sub.cmdsalesperson_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdsalesperson_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(Long)
+V.Local.sRet.Declare(String)
+'F.Intrinsic.Control.CallSub(Getlocsfromuser)
+
+V.Local.sSQL.Set("SELECT ID, NAME FROM SALESPERSONS")
+F.Intrinsic.String.Split("ID*!*Name","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("3000*!*3000","*!*",V.Local.iWidths)
+F.Intrinsic.UI.Browser("Select Sales Person","conx",V.Local.sSQL,V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form1.txtSalesmn.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsalesperson_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdsalesperson_click.End
+
+Program.Sub.salespersonbrowser.Start
+F.Intrinsic.Control.SetErrorHandler("salespersonbrowser_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iRows.Declare(Long)
+V.Local.iC.Declare(Long)
+V.Local.i.Declare(Long)
+V.Local.iRet.Declare(Long)
+V.Local.i2.Declare(Long)
+V.Local.sRetUser.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sMsg.Declare(String)
+V.Local.sName.Declare(String)
+
+F.Intrinsic.String.Build("SELECT DISTINCT GS_USER FROM GCG_MIR_USER_MAINT WHERE LOCATION IN {0}",V.Global.sLocs,V.Local.sSQL)
+F.ODBC.Connection!conx.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)
+	'Creat flexgrid here
+	F.Intrinsic.Control.DoUntil(V.ODBC.conx!rst.EOF,=,True)
+	V.Local.sRetUser.Set(V.ODBC.conx!rst.FieldValTrim!GS_USER)
+	F.Intrinsic.Control.If(V.Local.sRetUser,<>,"")
+		F.Intrinsic.String.Concat(V.Local.sRet,"*!*",V.Local.sRetUser,V.Local.sRet)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.conx!rst.MoveNext
+	F.Intrinsic.Control.Loop
+
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	F.Intrinsic.Variable.UBound(V.Local.sRet,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,>,0)
+		Gui.Form2.gsflexgrid1.Cols(3)
+		F.Intrinsic.Math.Add(V.Local.iRet,1,V.Local.iRet)
+		Gui.Form2.gsflexgrid1.Rows(V.Local.iRet)
+		Gui.Form2.gsflexgrid1.ColWidth(0,1000)
+		Gui.Form2.gsflexgrid1.ColWidth(1,3200)
+		Gui.Form2.gsflexgrid1.ColWidth(2,3000)
+		Gui.Form2.gsflexgrid1.BuildStyle(1,0,"Type","Command","Select")
+		Gui.Form2.gsflexgrid1.BuildStyle(1,1,"Type","Locked","True")
+		Gui.Form2.gsflexgrid1.BuildStyle(1,2,"Type","Locked","True")
+
+
+		F.Intrinsic.Control.For(V.Local.iC,0,V.Local.iRet,1)
+			F.Global.Security.GetFullName(V.Local.sRet(V.Local.i),V.Local.sName)
+			Gui.Form2.gsflexgrid1.TextMatrix(1,V.Local.iRows,V.Local.sName)
+			Gui.Form2.gsflexgrid1.TextMatrix(2,V.Local.iRows,V.Local.sRet(V.Local.i))
+			Gui.Form2.gsflexgrid1.ApplyStyle(V.Local.iRows,1)
+			F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+			F.Intrinsic.Math.Add(V.Local.i,1,V.Local.i)
+			F.Intrinsic.Control.If(V.Local.iRows,=,V.Local.iRet)
+				F.Intrinsic.Control.ExitFor(V.Local.iC)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Next(V.Local.iC)
+
+		Gui.Form2..Show
+
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Build("No records found for locaion {0}",V.Screen.Form1!txtLoc.Text,V.Local.sMsg)
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg,"No Records Found")
+
+F.Intrinsic.Control.EndIf
+F.ODBC.conx!rst.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("salespersonbrowser_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.salespersonbrowser.End
+
+Program.Sub.cmdloc_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdloc_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iWidths.Declare(Long)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.Control.CallSub(Getlocsfromuser)
+V.Local.bExists.Declare(Boolean,False)
+F.ODBC.Connection!conx.TableExists("GCG_MIR_USER_MAINT",V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists,=,False)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+'Gets the specific locations allowable for the caller to select
+F.Intrinsic.Control.If(V.Global.bSV,=,True)
+	V.Local.sSQL.Set("Select DISTINCT GCG_MIR_USER_MAINT.LOCATION, V_LOCATIONS.LOCATION_DESC FROM V_LOCATIONS RIGHT JOIN GCG_MIR_USER_MAINT ON V_LOCATIONS.LOCATION = GCG_MIR_USER_MAINT.LOCATION")
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Build("Select DISTINCT GCG_MIR_USER_MAINT.LOCATION, V_LOCATIONS.LOCATION_DESC FROM V_LOCATIONS RIGHT JOIN GCG_MIR_USER_MAINT ON V_LOCATIONS.LOCATION = GCG_MIR_USER_MAINT.LOCATION WHERE GS_USER = '{0}' AND LOCATION IN {1}",V.Global.sUser,V.Global.sLocs,V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+'V.Local.sSQL.Set("SELECT LOCATION, LOCATION_DESC FROM V_LOCATIONS")
+F.Intrinsic.String.Split("Location*!*Description","*!*",V.Local.sTitles)
+F.Intrinsic.String.Split("3000*!*3000","*!*",V.Local.iWidths)
+F.Intrinsic.UI.Browser("Select a Location","conx",V.Local.sSQL,V.Local.sTitles,V.Local.iWidths,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.Form1.txtLoc.Text(V.Local.sRet(0).Trim)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdloc_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdloc_click.End
+
+Program.Sub.chkallspandloc_click.Start
+F.Intrinsic.Control.SetErrorHandler("chkallspandloc_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllSPandLoc.Value,=,1)
+	Gui.Form1.txtLoc.Text("")
+	Gui.Form1.txtSalesmn.Text("")
+	Gui.Form1.txtLoc.Enabled(False)
+	Gui.Form1.txtSalesmn.Enabled(False)
+	Gui.Form1.cmdSalesPerson.Enabled(False)
+	Gui.Form1.cmdLoc.Enabled(False)
+	Gui.Form1.chkAllLocsForSales.Value(0)
+F.Intrinsic.Control.Else
+	Gui.Form1.txtLoc.Enabled(True)
+	Gui.Form1.txtSalesmn.Enabled(True)
+	Gui.Form1.cmdSalesPerson.Enabled(True)
+	Gui.Form1.cmdLoc.Enabled(True)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkallspandloc_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkallspandloc_click.End
+
+Program.Sub.gsflexgrid1_commandclick.Start
+F.Intrinsic.Control.SetErrorHandler("gsflexgrid1_commandclick_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+V.Local.iKey.Declare(Long)
+V.Local.iRow.Declare(Long)
+V.Local.iRows.Declare(Long)
+V.Local.sRow.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.iRet.Declare(Long)
+V.Local.i.Declare(Long)
+
+V.Local.iRow.Set(V.Args.Key)
+Gui.Form2.gsflexgrid1.ReadRow(V.Local.iRow,V.Local.sRow)
+F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+'V.Passed.000092.Set(V.Local.sRow(2))
+Gui.Form1.txtSalesmn.Text(V.Local.sRow(2))
+Gui.Form2..Visible(False)
+
+F.Intrinsic.Control.For(V.Local.iC,0,V.Local.iRet,1)
+	Gui.Form2.gsflexgrid1.TextMatrix(1,V.Local.iRows,"")
+	Gui.Form2.gsflexgrid1.TextMatrix(2,V.Local.iRows,"")
+	F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+	F.Intrinsic.Math.Add(V.Local.i,1,V.Local.i)
+	F.Intrinsic.Control.If(V.Local.iRows,=,V.Local.iRet)
+		F.Intrinsic.Control.ExitFor(V.Local.iC)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iC)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsflexgrid1_commandclick_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.gsflexgrid1_commandclick.End
+
+Program.Sub.form2_unload.Start
+Gui.Form2..Visible(False)
+
+Program.Sub.form2_unload.End
+
+Program.Sub.txtsalesmn_change.Start
+F.Intrinsic.Control.SetErrorHandler("txtsalesmn_change_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!txtSalesmn.Text,<>,"")
+	Gui.Form1.chkAllLocsForSales.Enabled(True)
+F.Intrinsic.Control.Else
+	Gui.Form1.chkAllLocsForSales.Enabled(False)
+	Gui.Form1.chkAllLocsForSales.Value(0)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("txtsalesmn_change_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.txtsalesmn_change.End
+
+Program.Sub.chkalllocsforsales_click.Start
+F.Intrinsic.Control.SetErrorHandler("chkalllocsforsales_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.Form1!chkAllLocsForSales.Value,=,1)
+	Gui.Form1.txtLoc.Text("")
+	Gui.Form1.txtLoc.Enabled(False)
+	Gui.Form1.cmdLoc.Enabled(False)
+	Gui.Form1.chkAllSPandLoc.Value(0)
+	Gui.Form1.chkAllSPandLoc.Enabled(False)
+F.Intrinsic.Control.Else
+	Gui.Form1.txtLoc.Enabled(True)
+	Gui.Form1.cmdLoc.Enabled(True)
+	Gui.Form1.chkAllSPandLoc.Enabled(True)
+F.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("chkalllocsforsales_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.chkalllocsforsales_click.End
+
+Program.Sub.cmdclear_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdclear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.Form1.lvw1.ClearItems
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdclear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4013_ServeReqReport",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdclear_click.End
+
+Program.Sub.Comments.Start
+${$0$}$AR$}$AGM$}$02/25/2015
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Quote 6243
+
+Coded by TRT
+2-9-15
+
+Program.Sub.Comments.End
+
